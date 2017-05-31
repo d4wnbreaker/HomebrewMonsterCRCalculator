@@ -1,14 +1,5 @@
 public class Stats
 {
-    /* 34
-
-     private int challengeRating;
-    private int proficiency;
-    private int armorClass;
-    private int hitPoints;
-    private int attackBonus;
-    private int damagePerRound;
-    private int saveDC; */
-
+    // make methods to check minimum and maximum values entered by the user
 
 }

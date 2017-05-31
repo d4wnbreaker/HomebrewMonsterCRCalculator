@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class ChallengeRating
 {
     private double[] challengeRating = new double[34];
