@@ -46,17 +46,17 @@ public class Proficiency
         return proficiency;
     }
 
-    public int compareProficiency(int comparedValue)
+    public boolean isBetween(int value)
     {
-        getProficiency();
-        int value;
-        for (int i = 0; i < proficiency.length; i++)
+        boolean flag = false;
+        if (value >= 2 & value <= 9)
         {
-            if (comparedValue == proficiency[i])
-            {
-                value = proficiency[i];
-            }
+            flag = true;
         }
-        return proficiency[i];
+        else
+        {
+            flag = false;
+        }
+        return flag;
     }
 }

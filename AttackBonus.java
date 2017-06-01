@@ -1,6 +1,6 @@
 public class AttackBonus
 {
-    private int[] attackBonus = int [34];
+    private int[] attackBonus = new int [34];
 
     public void makeAttackBonus()
     {
@@ -44,5 +44,19 @@ public class AttackBonus
     {
         makeAttackBonus();
         return attackBonus;
+    }
+
+    public boolean isBetween(int value)
+    {
+        boolean flag = false;
+        if (value >= 3 & value <= 14)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        return flag;
     }
 }

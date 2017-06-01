@@ -45,4 +45,18 @@ public class SaveDC
         makeSaveDC();
         return saveDC;
     }
+
+    public boolean isBetween(int value)
+    {
+        boolean flag = false;
+        if (value >= 13 & value <= 23)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        return flag;
+    }
 }

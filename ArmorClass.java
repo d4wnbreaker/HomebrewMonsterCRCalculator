@@ -45,4 +45,18 @@ public class ArmorClass
         makeArmorClass();
         return armorClass;
     }
+
+    public boolean isBetween(int value)
+    {
+        boolean flag = false;
+        if (value >= 13 & value <= 19)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        return flag;
+    }
 }

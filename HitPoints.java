@@ -79,4 +79,18 @@ public class HitPoints
         makeHitPoints();
         return hitPoints;
     }
+
+    public boolean isBetween(int value)
+    {
+        boolean flag = false;
+        if (value >= 1 & value <= 850)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        return flag;
+    }
 }

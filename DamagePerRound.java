@@ -79,4 +79,18 @@ public class DamagePerRound
         makeDamagePerRound();
         return damagePerRound;
     }
+
+    public boolean isBetween(int value)
+    {
+        boolean flag = false;
+        if (value <= 320)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        return flag;
+    }
 }
