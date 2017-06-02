@@ -1,4 +1,4 @@
-public class ChallengeRating
+public class ChallengeRating extends QuestionLoop
 {
     private double[] challengeRating = new double[34];
 
@@ -44,5 +44,19 @@ public class ChallengeRating
     {
         makeCR();
         return challengeRating;
+    }
+
+    public boolean isBetween(int value)
+    {
+        boolean flag = false;
+        if (value >= 2 & value <= 9)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        return flag;
     }
 }

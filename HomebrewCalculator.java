@@ -4,50 +4,32 @@ public class HomebrewCalculator
 {
     public static void main (String[] args)
     {
-        ChallengeRating challengeRating = new ChallengeRating();
-        Proficiency proficiency = new Proficiency();
-        ArmorClass armorClass = new ArmorClass();
-        HitPoints hitPoints = new HitPoints();
-        AttackBonus attackBonus = new AttackBonus();
-        DamagePerRound damagePerRound = new DamagePerRound();
-        SaveDC saveDC = new SaveDC();
-        CheckStats checkStats = new CheckStats();
-        Scanner scan = new Scanner (System.in);
-        int[] monsterCreated = new int[6];
-        double[] arrayResults = new double[6];
-        int value; int j = 0;
-        
+        QuestionLoop loop = new QuestionLoop();
+        Scanner scan = new Scanner(System.in);
+        String userInput; boolean satisfied = false;
+        double[] array = loop.getLoopInput();
 
-        /*
-        System.out.println("Enter your monster's Proficiency Bonus: ");
-        value = scan.nextInt();
-        monsterCreated[j] = value;
-        j++;
+        loop.makeItAll(); // YES!
 
-        System.out.println("Enter your monster's Armor Class: ");
-        value = scan.nextInt();
-        monsterCreated[j] = value;
-        j++;
+        do {
 
-        System.out.println("Enter your monster's HitPoints: ");
-        value = scan.nextInt();
-        monsterCreated[j] = value;
-        j++;
+            loop.questionLoop();
 
-        System.out.println("Enter your monster's Attack Bonus: ");
-        value = scan.nextInt();
-        monsterCreated[j] = value;
-        j++;
+            for (int i = 0; i < array.length; i++)
+            {
+                System.out.println(array[i]);
+            }
 
-        System.out.println("Enter your monster's Damage per Round: ");
-        value = scan.nextInt();
-        monsterCreated[j] = value;
-        j++;
+            System.out.println("Are you satisfied? << Y/N >>.");
+            userInput = scan.nextLine().toUpperCase();
 
-        System.out.println("Enter your monster's Save DC:");
-        value = scan.nextInt();
-        monsterCreated[j] = value;
-        j++; */
+            if(userInput.equals("Y"))
+            {
+                satisfied = true;
+            }
+        } while (!satisfied);
 
+        System.out.println("Whenever you need to enter here again, knock three times on the blue window.");
+        System.out.println("Goodbye.");
     }
 }
