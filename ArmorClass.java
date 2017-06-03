@@ -4,16 +4,16 @@ public class ArmorClass
 
     public void makeArmorClass()
     {
-        armorClass[0] = 13;
-        armorClass[1] = 13;
-        armorClass[2] = 13;
-        armorClass[3] = 13;
-        armorClass[4] = 13;
-        armorClass[5] = 13;
-        armorClass[6] = 13;
-        armorClass[7] = 13;
-        armorClass[8] = 14;
-        armorClass[9] = 15;
+        armorClass[0]  = 13;
+        armorClass[1]  = 13;
+        armorClass[2]  = 13;
+        armorClass[3]  = 13;
+        armorClass[4]  = 13;
+        armorClass[5]  = 13;
+        armorClass[6]  = 13;
+        armorClass[7]  = 13;
+        armorClass[8]  = 14;
+        armorClass[9]  = 15;
         armorClass[10] = 15;
         armorClass[11] = 15;
         armorClass[12] = 16;

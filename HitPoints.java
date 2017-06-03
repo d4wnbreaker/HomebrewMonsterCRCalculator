@@ -4,16 +4,16 @@ public class HitPoints
 
     public void makeHitPoints()
     {
-        hitPoints[0] = 1;
-        hitPoints[1] = 6;
-        hitPoints[2] = 7;
-        hitPoints[3] = 35;
-        hitPoints[4] = 36;
-        hitPoints[5] = 49;
-        hitPoints[6] = 50;
-        hitPoints[7] = 70;
-        hitPoints[8] = 71;
-        hitPoints[9] = 85;
+        hitPoints[0]  = 1;
+        hitPoints[1]  = 6;
+        hitPoints[2]  = 7;
+        hitPoints[3]  = 35;
+        hitPoints[4]  = 36;
+        hitPoints[5]  = 49;
+        hitPoints[6]  = 50;
+        hitPoints[7]  = 70;
+        hitPoints[8]  = 71;
+        hitPoints[9]  = 85;
         hitPoints[10] = 86;
         hitPoints[11] = 100;
         hitPoints[12] = 101;

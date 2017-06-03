@@ -1,19 +1,22 @@
+import java.util.ArrayList;
+
 public class Proficiency
 {
     private int[] proficiency = new int[34];
+    private ArrayList <Integer> arrayPosition = new ArrayList <Integer>();
 
     public void makeProficiency()
     {
-        proficiency[0] = 2;
-        proficiency[1] = 2;
-        proficiency[2] = 2;
-        proficiency[3] = 2;
-        proficiency[4] = 2;
-        proficiency[5] = 2;
-        proficiency[6] = 2;
-        proficiency[7] = 2;
-        proficiency[8] = 3;
-        proficiency[9] = 3;
+        proficiency[0]  = 2;
+        proficiency[1]  = 2;
+        proficiency[2]  = 2;
+        proficiency[3]  = 2;
+        proficiency[4]  = 2;
+        proficiency[5]  = 2;
+        proficiency[6]  = 2;
+        proficiency[7]  = 2;
+        proficiency[8]  = 3;
+        proficiency[9]  = 3;
         proficiency[10] = 3;
         proficiency[11] = 3;
         proficiency[12] = 4;
@@ -59,4 +62,19 @@ public class Proficiency
         }
         return flag;
     }
+
+    public ArrayList<Integer> getArrayPosition(int value)
+    {
+        int j = 0;
+        for (int i = 0; i < proficiency.length; i++)
+        {
+            if (value == proficiency[i])
+            {
+                arrayPosition.add(i);
+                j++;
+            }
+        }
+        return arrayPosition;
+    }
 }
+    // Find a way to track the first and last time that the desired proficiency equals a value in the array [DONE]

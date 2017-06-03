@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/*
+    Why not to BinarySearch when using checkThresholds()?
+    Unfortunately, BinarySearch will return any of the values that are equal to the value being searched.
+    Since I want precision to find the correct ChallengeRating, BinarySearch isn't helpful here.
+*/
+
 public class QuestionLoop
 {
     Scanner scan = new Scanner (System.in);
@@ -13,7 +19,6 @@ public class QuestionLoop
         AttackBonus attackBonus = new AttackBonus();
         Proficiency proficiency = new Proficiency();
         ArmorClass armorClass = new ArmorClass();
-
         HitPoints hitPoints = new HitPoints();
         SaveDC saveDC = new SaveDC();
 
@@ -55,7 +60,6 @@ public class QuestionLoop
 
         System.out.println("Enter the Save DC of your monster:");
         inputHolder[i] = scan.nextDouble();
-        i++;
     }
 
     public double[] getLoopInput()

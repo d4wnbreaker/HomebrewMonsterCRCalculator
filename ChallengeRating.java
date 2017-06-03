@@ -1,6 +1,7 @@
 public class ChallengeRating extends QuestionLoop
 {
     private double[] challengeRating = new double[34];
+    private int arrayPosition;
 
     public void makeCR()
     {
@@ -58,5 +59,17 @@ public class ChallengeRating extends QuestionLoop
             flag = false;
         }
         return flag;
+    }
+
+    public int getArrayPosition(int value)
+    {
+        for (int i = 0; i < challengeRating.length; i++)
+        {
+            if (value == challengeRating[i])
+            {
+                arrayPosition = i;
+            }
+        }
+        return arrayPosition;
     }
 }

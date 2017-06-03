@@ -4,16 +4,16 @@ public class SaveDC
 
     public void makeSaveDC()
     {
-        saveDC[0] = 13;
-        saveDC[1] = 13;
-        saveDC[2] = 13;
-        saveDC[3] = 13;
-        saveDC[4] = 13;
-        saveDC[5] = 13;
-        saveDC[6] = 13;
-        saveDC[7] = 14;
-        saveDC[8] = 15;
-        saveDC[9] = 15;
+        saveDC[0]  = 13;
+        saveDC[1]  = 13;
+        saveDC[2]  = 13;
+        saveDC[3]  = 13;
+        saveDC[4]  = 13;
+        saveDC[5]  = 13;
+        saveDC[6]  = 13;
+        saveDC[7]  = 14;
+        saveDC[8]  = 15;
+        saveDC[9]  = 15;
         saveDC[10] = 15;
         saveDC[11] = 16;
         saveDC[12] = 16;
