@@ -8,9 +8,6 @@ public class HomebrewCalculator
         QuestionLoop loop = new QuestionLoop();
         Scanner scan = new Scanner(System.in);
         String userInput; boolean satisfied = false;
-        int value = 3;
-
-        loop.makeItAll(); // YES!
 
         do {
 
@@ -33,7 +30,7 @@ public class HomebrewCalculator
 
 /*
     - Check if the inputs are in between the proper numbers.
-        - Check CR, check Proficiency, check Armor Class...
+        - Check CR, check Proficiency, check Armor Class... ✅
     - Return the results and suggestions of adjustments to the user compared to the initial CR input.
         - ((Def + Off) / 2), return value rounded up, return CR of every value from input
     - Maybe return an evaluation of how close the monster is to be balanced? Idk.

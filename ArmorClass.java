@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class ArmorClass
 {
     private int[] armorClass = new int[34];
+    private ArrayList <Integer> arrayPosition = new ArrayList <Integer> ();
 
     public void makeArmorClass()
     {
@@ -46,7 +49,7 @@ public class ArmorClass
         return armorClass;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
         if (value >= 13 & value <= 19)
@@ -58,5 +61,19 @@ public class ArmorClass
             flag = false;
         }
         return flag;
+    }
+
+    public ArrayList<Integer> getArrayPosition(int value)
+    {
+        int j = 0;
+        for (int i = 0; i < armorClass.length; i++)
+        {
+            if (value == armorClass[i])
+            {
+                arrayPosition.add(i);
+                j++;
+            }
+        }
+        return arrayPosition;
     }
 }

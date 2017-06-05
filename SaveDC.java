@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class SaveDC
 {
     private int[] saveDC = new int[34];
+    private ArrayList <Integer> arrayPosition = new ArrayList <Integer> ();
 
     public void makeSaveDC()
     {
@@ -46,7 +49,7 @@ public class SaveDC
         return saveDC;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
         if (value >= 13 & value <= 23)
@@ -58,5 +61,19 @@ public class SaveDC
             flag = false;
         }
         return flag;
+    }
+
+    public ArrayList<Integer> getArrayPosition(int value)
+    {
+        int j = 0;
+        for (int i = 0; i < saveDC.length; i++)
+        {
+            if (value == saveDC[i])
+            {
+                arrayPosition.add(i);
+                j++;
+            }
+        }
+        return arrayPosition;
     }
 }

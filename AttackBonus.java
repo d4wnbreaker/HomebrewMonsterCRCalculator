@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class AttackBonus
 {
-    private int[] attackBonus = new int [34];
+    private int[] attackBonus = new int[34];
+    private ArrayList <Integer> arrayPosition = new ArrayList <Integer> ();
 
     public void makeAttackBonus()
     {
@@ -46,7 +49,7 @@ public class AttackBonus
         return attackBonus;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
         if (value >= 3 & value <= 14)
@@ -58,5 +61,19 @@ public class AttackBonus
             flag = false;
         }
         return flag;
+    }
+
+    public ArrayList<Integer> getArrayPosition(int value)
+    {
+        int j = 0;
+        for (int i = 0; i < attackBonus.length; i++)
+        {
+            if (value == attackBonus[i])
+            {
+                arrayPosition.add(i);
+                j++;
+            }
+        }
+        return arrayPosition;
     }
 }

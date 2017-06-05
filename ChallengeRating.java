@@ -1,4 +1,4 @@
-public class ChallengeRating extends QuestionLoop
+public class ChallengeRating
 {
     private double[] challengeRating = new double[34];
     private int arrayPosition;
@@ -47,10 +47,10 @@ public class ChallengeRating extends QuestionLoop
         return challengeRating;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
-        if (value >= 2 & value <= 9)
+        if (value >= 0 & value <= 30)
         {
             flag = true;
         }

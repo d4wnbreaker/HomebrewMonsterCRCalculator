@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Proficiency
 {
     private int[] proficiency = new int[34];
-    private ArrayList <Integer> arrayPosition = new ArrayList <Integer>();
+    private ArrayList<Integer> arrayPosition = new ArrayList<Integer>();
 
     public void makeProficiency()
     {
@@ -49,7 +49,7 @@ public class Proficiency
         return proficiency;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
         if (value >= 2 & value <= 9)
@@ -77,4 +77,4 @@ public class Proficiency
         return arrayPosition;
     }
 }
-    // Find a way to track the first and last time that the desired proficiency equals a value in the array [DONE]
+    // Find a way to track the first and last time that the desired proficiency equals a value in the array ✅

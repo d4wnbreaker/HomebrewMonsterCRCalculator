@@ -1,6 +1,7 @@
 public class DamagePerRound
 {
     private int[] damagePerRound = new int[68];
+    private int arrayPosition;
 
     public void makeDamagePerRound()
     {
@@ -80,7 +81,7 @@ public class DamagePerRound
         return damagePerRound;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
         if (value <= 320)
@@ -92,5 +93,17 @@ public class DamagePerRound
             flag = false;
         }
         return flag;
+    }
+
+    public int getArrayPosition(int value)
+    {
+        for (int i = 0; i < damagePerRound.length; i++)
+        {
+            if (value == damagePerRound[i])
+            {
+                arrayPosition = i;
+            }
+        }
+        return arrayPosition;
     }
 }

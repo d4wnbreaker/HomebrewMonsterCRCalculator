@@ -1,6 +1,7 @@
 public class HitPoints
 {
     private int[] hitPoints = new int[68];
+    private int arrayPosition;
 
     public void makeHitPoints()
     {
@@ -80,7 +81,7 @@ public class HitPoints
         return hitPoints;
     }
 
-    public boolean isBetween(int value)
+    public boolean isBetween(double value)
     {
         boolean flag = false;
         if (value >= 1 & value <= 850)
@@ -92,5 +93,17 @@ public class HitPoints
             flag = false;
         }
         return flag;
+    }
+
+    public int getArrayPosition(int value)
+    {
+        for (int i = 0; i < hitPoints.length; i++)
+        {
+            if (value == hitPoints[i])
+            {
+                arrayPosition = i;
+            }
+        }
+        return arrayPosition;
     }
 }
